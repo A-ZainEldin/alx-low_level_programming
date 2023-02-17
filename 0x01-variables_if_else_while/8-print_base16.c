@@ -23,7 +23,7 @@ while (x < 10)
 
 while (y <= 'f')
 {
-	printf("%c", x);
+	printf("%c", y);
 	y++;
 }
 putchar('\n');
