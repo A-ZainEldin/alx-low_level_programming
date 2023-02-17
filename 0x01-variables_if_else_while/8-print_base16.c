@@ -12,7 +12,7 @@ int main(void)
 {
 int x;
 char y;
-y = a;
+y = 'a';
 x = 0;
 
 while (x < 10)
