@@ -13,7 +13,7 @@ int main(void)
 char test = 'a';
 while (test <= 'z')
 {
-	if(test != 'q' && test != 'e')
+	if (test != 'q' && test != 'e')
 	putchar(test);
 	test++;
 }
