@@ -10,10 +10,10 @@
  */
 int main(void)
 {
+int test;
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-int test;
 test = n % 10;
 if (test > 5)
 {
