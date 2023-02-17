@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - this project is going to print the size of various types of variables
- * Return 0 (Success)
+ * main - this is a function that prints a size
+ * Return: 0(Success)
  */
 int main(void)
 {
