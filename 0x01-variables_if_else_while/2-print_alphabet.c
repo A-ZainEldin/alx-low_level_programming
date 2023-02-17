@@ -6,7 +6,7 @@
 /**
  *main - this is main discription
  *
- *Return: Always 0 (Success) 
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -18,4 +18,4 @@ while (test<='z')
 }
 putchar('\n');
 return (0);
-}				}
+}
