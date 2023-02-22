@@ -3,12 +3,12 @@
 /**
  * _abs - is a function that gets absolute value of a number
  * Return: is integer type
- * @int : the integer value evaluated
+ * @A : the integer value evaluated
  */
 
-int _abs(int)
+int _abs(int A)
 {
-	int x = int;
+	int x = A;
 
 	if (x > 0)
 	{
