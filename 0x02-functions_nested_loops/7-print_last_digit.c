@@ -6,9 +6,14 @@
  */
 int print_last_digit(int Z)
 {
-	int x = Z % 10;
+	int a;
+	if (Z < 0)
+		n = -n;
+	a = n % 10;
+	if (a < 0)
+		a = -a;
+	_putchar(a + '0')
+		return (a);
 
-	_putchat(x);
-	return (Z % 10);
 
 }
