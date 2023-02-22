@@ -2,7 +2,7 @@
 /**
  * main - print a word
  *
- * return : Always 0.
+ * Return : Always 0.
  */
 int main(void)
 {
