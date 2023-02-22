@@ -6,7 +6,7 @@
  */
 int print_last_digit(int Z)
 {
-	int x = z% 10;
+	int x = Z % 10;
 
 	_putchat(x);
 	return (Z % 10);
