@@ -4,6 +4,7 @@
  * print_numbers - does multiplying
  * Return: number
  */
+
 void print_numbers(void)
 {
 	int i;
