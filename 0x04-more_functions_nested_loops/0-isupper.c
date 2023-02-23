@@ -1,8 +1,9 @@
 #include"main.h"
+
 /**
- *_isupper - checks if the number givven is ubber
- *@c:the number given
- *Return:is always one or zero
+ * _isupper - checks if the number givven is ubber
+ * @c:the number given
+ * Return:is always one or zero
  */
 int _isupper(int c)
 {
@@ -12,6 +13,6 @@ int _isupper(int c)
 	}
 	else
 	{
-		return (0);
+		return (1);
 	}
 }
