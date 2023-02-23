@@ -2,11 +2,11 @@
 
 /**
  * mul - does multiplying
- * @a: somethin 
+ * @a: somethin
  * @b: something
  * Return: number
  */
 int mul(int a, int b)
 {
-	return (a*b);
+	return (a * b);
 }
