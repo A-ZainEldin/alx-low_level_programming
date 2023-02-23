@@ -5,7 +5,7 @@ int main(void)
 	int day;
 	int year;
 
-	month = 04;
+	month = 4;
 	day = 91;
 	year = 1997;
 
