@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *_puts - gives length of passed string
- *@str: the string passed
- *Return: Always a void
+ * puts2 - gives length of passed string
+ * @str : the string passed
+ * Return : Always a void
  */
 void puts2(char *str)
 {
