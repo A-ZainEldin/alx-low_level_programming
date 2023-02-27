@@ -6,36 +6,25 @@
  */
 void rev_string(char *s)
 {
-	int i;
-	int sum;
-	int j;
+	int count = 0, i, j;
+	char *str, temp;
 
-	i = 0;
-	sum = 0;
-	j = 0;
-
-	while (s[i] != '\0')
+	while (count >= 0)
 	{
-		sum = sum + 1;
-		i++;
+		if (s[count] == '\0')
+			break;
+		count++;
 	}
-	const int test = sum;
+	str = s;
 
-	char var[test];
-
-	i = sum;
-	while (i != 0)
+	for (i = 0; i < (count - 1); i++)
 	{
-		var[j] = s[i - 1];
-		i--;
-		j++;
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
 	}
-	i = 0;
-
-	while (s[i] != '\0')
-	{
-		s[i] = var[i];
-		i++;
-	}
-	_putchar('\n');
 }
+
