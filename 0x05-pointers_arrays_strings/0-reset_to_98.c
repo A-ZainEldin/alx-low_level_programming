@@ -2,7 +2,7 @@
 /**
  * reset_to_98 - resets the passed pointer value to 98
  * @n : is a pointer that is pointing to the function we are resetting
- * Return: void
+ * Return: 0 Success
  */
 void reset_to_98(int *n)
 {
