@@ -18,7 +18,7 @@ void puts_half(char *str)
 		sum = sum + 1;
 		i++;
 	}
-	if(sum % 2 == 0)
+	if (sum % 2 == 0)
 	{
 		stop = (sum / 2) - 1;
 	}
