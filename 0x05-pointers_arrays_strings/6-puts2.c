@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - gives length of passed string
+ *_puts - gives length of passed string
  *@str: the string passed
  *Return: Always a void
  */
