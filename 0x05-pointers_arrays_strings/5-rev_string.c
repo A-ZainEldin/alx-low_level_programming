@@ -19,7 +19,9 @@ void rev_string(char *s)
 		sum = sum + 1;
 		i++;
 	}
-	char var[sum];
+	const int test = sum;
+
+	char var[test];
 
 	i = sum;
 	while (i != 0)
