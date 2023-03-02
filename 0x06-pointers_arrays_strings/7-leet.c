@@ -31,5 +31,5 @@ char *leet(char *test)
 			test[i] = '1';
 		}
 	}
-	return (test};
+	return (test);
 }
