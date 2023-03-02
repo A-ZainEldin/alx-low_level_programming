@@ -11,19 +11,19 @@ char *leet(char *test)
 	char numbers[] = "4433007711";
 
 	i = 0;
-	while (str[i])
+	while (test[i])
 	{
 		j = 0;
 		while (letters[j])
 		{
-			if (str[i] == letters[j])
+			if (test[i] == letters[j])
 			{
-				str[i] = numbers[j];
+				test[i] = numbers[j];
 				break;
 			}
 			j++;
 		}
 		i++;
 	}
-	return (str);
+	return (test);
 }
