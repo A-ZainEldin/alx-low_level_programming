@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * leet - does replace some characters
- * @char : is the string preformed on
- * Return : the starting index
+ *leet- does replace some characters
+ *@test: is the string preformed on
+ *Return: the starting index
  */
 char *leet(char *test)
 {
