@@ -1,4 +1,5 @@
 #include"main.h"
+
 /**
  * _strncat- does casting
  * @dest: the main
@@ -6,7 +7,7 @@
  * @n: the amount
  * Return: always a pointer
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;
 
