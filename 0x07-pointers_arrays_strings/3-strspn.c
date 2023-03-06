@@ -8,8 +8,6 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int _strspn(char *s, char *accept)
-{
 unsigned int n = 0;
 	int r;
 
@@ -29,5 +27,4 @@ unsigned int n = 0;
 	}
 	return (n);
 
-}
 }
