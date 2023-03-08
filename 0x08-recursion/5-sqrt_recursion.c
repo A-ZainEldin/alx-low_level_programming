@@ -2,7 +2,7 @@
 /**
  * test- tests function
  * @factor:factors
- * @max:tests
+ * @tests:manx
  * Return:number
  */
 int test(int factor, int tests)
@@ -16,7 +16,7 @@ int test(int factor, int tests)
 		return (-1);
 	}
 	else
-		return (test(factor+1,tests));
+		return (test(factor + 1, tests));
 }
 /**
  * _sqrt_recursion- does get square root
@@ -28,5 +28,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 	return (-1);
 	else
-	return (test(1,n));
+	return (test(1, n));
 }
