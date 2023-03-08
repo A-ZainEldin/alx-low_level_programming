@@ -1,55 +1,30 @@
 #include "main.h"
 /**
- * find_max_factor - recursively finds the maximum factor
- * @n: the number to be checked
+ * check - recursively checks if a number is prime
  * @factor: the factor to be tested
+ * @number: the number to be checked
  *
- * Return: the maximum factor
+ * Return: 1 if the number is prime, 0 otherwise
  */
-int find_max_factor(int n, int factor)
+int check(int factor, int number)
 {
-	if (factor * factor > n)
-	{
-		return (factor - 2);
-	}
-	return (find_max_factor(n, factor + 2));
-}
-
-/**
- * test - recursively checks if a number is prime
- * @factor: the factor to be tested
- * @tests: the number to be checked
- * @max_factor: the maximum factor to be tested
- *
- * Return: 1 if prime, 0 otherwise
- */
-int test(int factor, int tests, int max_factor)
-{
-	if (factor > max_factor)
-	{
-		return (1);
-	}
-	if (tests % factor == 0)
-	{
+	if (number < 2 || number % factor == 0)
 		return (0);
-	}
-	return (test(factor + 2, tests, max_factor));
+	else if (factor > number / 2)
+		return (1);
+	else
+		return (check(factor + 1, number));
 }
 
 /**
  * is_prime_number - checks if a number is prime
  * @n: the number to be checked
  *
- * Return: 1 if prime, 0 otherwise
+ * Return: 1 if the number is prime, 0 otherwise
  */
 int is_prime_number(int n)
 {
-	if (n < 2)
-	{
-		return (0);
-	}
-	int max_facto;
-
-	max_factor = find_max_factor(n, 1);
-	return (test(3, n, max_factor));
+	if (n == 2)
+		return (1);
+	return (check(2, n));
 }
