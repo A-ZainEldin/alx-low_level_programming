@@ -48,6 +48,8 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	int max_factor = find_max_factor(n, 1);
+	int max_facto;
+
+	max_factor = find_max_factor(n, 1);
 	return (test(3, n, max_factor));
 }
