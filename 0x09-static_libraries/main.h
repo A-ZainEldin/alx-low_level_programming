@@ -1,5 +1,5 @@
-#ifndef OK
-#define OK
+#ifndef MAIN
+#define MAIN
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
