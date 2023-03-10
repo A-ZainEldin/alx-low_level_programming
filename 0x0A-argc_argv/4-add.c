@@ -4,22 +4,23 @@
 #include <ctype.h>
 
 /**
- * is_numeric_string - checks if a string is numeric
- * str : the string checked
- * Return : always int
+ *is_numeric_string- checks if a string is numeric
+ *@str: the string checked
+ *Return: always int
  */
-int is_numeric_string(const char* str)
+int is_numeric_string(const char *str)
 {
 	int i = 0;
+
 	while (str[i])
 	{
 		if (!isdigit(str[i]))
 		{
-			return 0;
+			return (0);
 		}
 	i++;
 	}
-	return 1;
+	return (1);
 }
 /**
  *main- a function that prints its arguments
@@ -37,7 +38,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if(is_numeric_string(argv[i]))
+			if (is_numeric_string(argv[i]))
 			{
 				sum += atoi(argv[i]);
 			}
