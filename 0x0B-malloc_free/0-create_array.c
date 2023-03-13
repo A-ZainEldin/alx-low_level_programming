@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  *create_array- creates an array that starts with a given string
  *@size: gives the size of the desired array
