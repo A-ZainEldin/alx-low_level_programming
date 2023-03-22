@@ -1,6 +1,8 @@
 #include "function_pointers.h"
 #include <stdio.h>
+#ifndef MAIN
 #include <stddef.h>
+#endif
 /**
  * array_iterator - prints each array elem on a newl
  * @array: array
