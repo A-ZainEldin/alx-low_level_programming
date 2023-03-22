@@ -1,11 +1,11 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- * arrray_iterator - does funciotn on array
- * @array : the array we usin
- * @size : the size of it
- * @action : the thing needed to get done
- * Return : always void
+ *array_iterator- does funciotn on array
+ *@array: the array we usin
+ *@size: the size of it
+ *@action: the thing needed to get done
+ *Return: always void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
@@ -13,7 +13,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	if (array == NULL || action == NULL)
 		return;
-	for (i = 0; i<size; i++)
+	for (i = 0; i < size; i++)
 	{
 		action(array[i]);
 	}
