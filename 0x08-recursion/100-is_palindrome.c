@@ -1,23 +1,26 @@
 #include "main.h"
 /**
- *is_palindrome- works if the function had a palindrome
- *@s: a pointer to the string
- *Return: zero if false and one if true
+ * is_palindrome - checks if a string is a palindrome
+ * @s: pointer to string
+ *
+ * Return: 1 if the string is a palindrome, 0 if not
  */
 int is_palindrome(char *s)
 {
-	int c = 0;
-	int x = 0,i;
+	/* base case: an empty string is a palindrome */
+	if (*s == '\0')
+		return (1);
 
-	for (i = 0; s[i] != '\0'; i++)
-		c++;
-	c -= 1;
-	while (x != c)
-	{
-		if (s[x] != s[c])
-			return (0);
-		x++;
-		c--;
-	}
-	return (1);
+	/* find the length of the string */
+	int len = 0;
+	while (s[len] != '\0')
+		len++;
+
+	/* check if the first and last characters match */
+	if (s[0] != s[len - 1])
+		return (0);
+
+	/* call the function recursively on the substring between the first and last characters */
+	s[len - 1] = '\0';
+	return (is_palindrome(s + 1));
 }
