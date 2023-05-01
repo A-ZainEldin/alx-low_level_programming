@@ -7,12 +7,13 @@
  */
 int is_palindrome(char *s)
 {
+	int len = 0;
+
 	/* base case: an empty string is a palindrome */
 	if (*s == '\0')
 		return (1);
 
 	/* find the length of the string */
-	int len = 0;
 	while (s[len] != '\0')
 		len++;
 
