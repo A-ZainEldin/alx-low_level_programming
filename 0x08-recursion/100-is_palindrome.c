@@ -7,9 +7,9 @@
 int is_palindrome(char *s)
 {
 	int c = 0;
-	int x = 0,i = 0;
+	int x = 0,i;
 
-	for (i; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 		c++;
 	c -= 1;
 	while (x != c)
