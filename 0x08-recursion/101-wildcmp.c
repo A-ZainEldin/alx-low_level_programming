@@ -1,12 +1,10 @@
 #include "main.h"
 /**
- * is_identical - compares two strings and returns 1
- * if they are identical, 0 otherwise
+ * is_identical - compares two strings and returns 1 or 0
  * @s1: the first string
  * @s2: the second string
  *
- * Return: 1 if the strings can be considered identical,
- * otherwise return 0.
+ * Return: 1 if the strings can be considered identical
  */
 int is_identical(char *s1, char *s2)
 {
