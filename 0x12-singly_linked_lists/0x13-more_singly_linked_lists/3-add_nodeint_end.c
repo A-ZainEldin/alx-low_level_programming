@@ -1,5 +1,5 @@
 #include <stdlib>
-#include "main.h"
+#include "list.h"
 /**
  * add_nodeint_end- adds a node at the end
  * @head: the starting index
