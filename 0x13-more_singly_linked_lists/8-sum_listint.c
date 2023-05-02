@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * sum_listint - calculates the sum 
- * @head: first node 
+ * sum_listint - calculates the sum
+ * @head: first node
  *
  * Return: sum
  */
