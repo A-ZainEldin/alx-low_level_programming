@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * print_listint- prints a node at the end
  * @h: the value of head
@@ -8,15 +8,17 @@ size_t print_listint(const listint_t *h)
 {
 	int counter = 0;
 
-	listint_t *temp = h;
+	listint_t *temp =(listint_t *) h;
 
 	while (temp != NULL)
 	{
 		printf("%d",temp->n);
 		temp = temp->next;
 		counter++;
+		if(temp != NULL)
+			printf("\n");
 	}
-	print("\n");
+	printf("\n");
 
 	return (counter);
 }
