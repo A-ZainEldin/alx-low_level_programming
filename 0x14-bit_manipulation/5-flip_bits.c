@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * flip_bits- count the diffrent number of bits 
+ * flip_bits- count the diffrent number of bits
  * @n: first number
  * @m: second number
  * Return: number of diffrent bits
