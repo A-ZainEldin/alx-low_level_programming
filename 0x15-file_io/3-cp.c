@@ -6,7 +6,7 @@ void close_file(int fd);
 
 /**
  * cb - Allocates space.
- * @file: The name.
+ * @name: The name.
  * Return: the allocated place
  */
 char *cb(char *name)
